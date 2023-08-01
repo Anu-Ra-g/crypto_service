@@ -5,6 +5,10 @@ from .. import schemas, database, utils, models
 
 router = APIRouter()
 
+@router.get("/",status_code=status.HTTP_200_OK)
+def welcome():
+    return {"message": "Welcome to the backend service"}
+
 @router.post("/register", status_code=status.HTTP_201_CREATED, response_model=schemas.UserReponse)
 def register(user: schemas.UserRequest, db: Session = Depends(database.get_db)):
 
