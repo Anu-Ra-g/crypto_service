@@ -1,4 +1,4 @@
-# crypto_service
+# Crypto_service
 <hr>
 This is a crypto backend service that is built using Python, FastAPI (0.100.0) web framework, and PostgreSQL database. 
 
